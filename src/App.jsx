@@ -5,12 +5,12 @@ import Section from './components/Section';
 
 const App = () => {
   return (
-    <div className="w-[90vw] h-[100vh] bg-opacity-70 mx-15 my-10 rounded-2xl shadow-2xl bg-white relative">
-      <header className='h-10.5 w-full px-10 py-9'>
-        <Brand/>
+    <div className="w-[90vw] min-h-screen bg-opacity-70 mx-auto my-10 rounded-2xl shadow-2xl bg-white relative p-4">
+      <header className="w-full px-6 py-4">
+        <Brand />
       </header>
       <Menu />
-      <Section/>
+      <Section />
     </div>
   );
 };

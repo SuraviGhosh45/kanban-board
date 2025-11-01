@@ -1,34 +1,77 @@
 @import "tailwindcss";
 
-body{
-    font-family: 'Raleway','open sans';
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(135deg,#FFBDBD,#FBFBFB);
+body {
+  font-family: 'Raleway', 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #FFBDBD, #FBFBFB);
 }
 
-.head{
-    color:#E4004B;
+.head {
+  color: #E4004B;
+  text-align: center;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin-top: 1rem;
 }
 
-.list li{
-    font-weight: 500;
-    padding: 10px;
+.list li {
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease-in-out;
 }
 
-.list li:hover{
-    font-weight: 800;
+.list li:hover {
+  font-weight: 700;
+  transform: scale(1.05);
 }
 
-h3{
-    text-align: center;
+h3 {
+  text-align: center;
+  font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
-.section{
-    border: 2px solid #211832;
-    text-transform: capitalize;
-    text-align: center;
+.section {
+  border: 2px solid #211832;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  transition: all 0.3s ease-in-out;
 }
-.section h4{
-    font-weight:bold;
+
+.section h4 {
+  font-weight: bold;
+  font-size: clamp(1rem, 2vw, 1.3rem);
+}
+
+@media (max-width: 1024px) {
+  .section {
+    width: 30vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 80vw;
+    margin: 1rem auto;
+  }
+  .list li {
+    padding: 0.4rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    background: linear-gradient(135deg, #FFDCDC, #FFFFFF);
+  }
+  .head {
+    font-size: 1.3rem;
+  }
+  .section {
+    width: 90vw;
+  }
+  .list li {
+    font-size: 0.85rem;
+  }
 }
